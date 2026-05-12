@@ -16,3 +16,13 @@ Layihə 4 əsas mərhələdən ibarətdir:
 
 ---
 *Bu layihə Data Analytics portfoliomun SQL hissəsini təmsil edir.*
+## 📊 Power BI Dashboard
+SQL-də hazırlanan məlumat bazası əsasında aşağıdakı interaktiv hesabat hazırlanmışdır:
+
+![Sales Analytics Dashboard](./dashboard_view.png)
+
+### Hesabatın əhatə etdiyi göstəricilər:
+* **Total Sales & Profit**: Ümumi satış həcmi və xalis mənfəət.
+* **Top Products**: Ən çox gəlir gətirən məhsulların analizi.
+* **City Performance**: Regionlar üzrə satış trendləri.
+* **Customer Segments**: Müştəri loyallığı və seqmentasiya payı.
