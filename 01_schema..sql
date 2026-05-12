@@ -1,4 +1,4 @@
--- Köhn? c?dv?ll?r varsa, ?vv?lc? onlarý silirik (ardýcýllýq vacibdir!)
+-- KÃ¶hn? cedveller varsa, evvelce onlarÃ½ silirik (ardÃ½cÃ½llÃ½q vacibdir!)
 DROP TABLE Sales CASCADE CONSTRAINTS;
 DROP TABLE Customers CASCADE CONSTRAINTS;
 DROP TABLE Products CASCADE CONSTRAINTS;
