@@ -9,15 +9,15 @@ CREATE OR REPLACE PACKAGE pkg_sales_mgmt IS
         p_list IN NUMBER
     );
 
-    -- M¸˛teri seqmentini qaytaran funksiya
+    -- M√º√æteri seqmentini qaytaran funksiya
     FUNCTION fn_cust_seg(p_cid IN NUMBER) RETURN VARCHAR2;
 END pkg_sales_mgmt;
 /
 
--- 2. PAKET G÷VDeS› 
+-- 2. PAKET G√ñVDeS√ù 
 CREATE OR REPLACE PACKAGE BODY pkg_sales_mgmt IS
 
-    -- Prosedur: Yeni mehsulun yoxlan˝˛la elave edilmesi
+    -- Prosedur: Yeni mehsulun yoxlan√Ω√æla elave edilmesi
     PROCEDURE sp_add_prod(
         p_id   IN NUMBER,
         p_name IN VARCHAR2,
@@ -28,7 +28,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_sales_mgmt IS
     ) IS
     BEGIN
         IF p_list < p_cost THEN
-            RAISE_APPLICATION_ERROR(-20001, 'Sat˝˛ qiym?ti maya d?y?rind?n a˛a˝ ola bilm?z!');
+            RAISE_APPLICATION_ERROR(-20001, 'Sat√Ω√æ qiym?ti maya d?y?rind?n a√æa√∞√Ω ola bilm?z!');
         ELSE
             INSERT INTO Products (product_id,
                                   product_name, 
@@ -47,7 +47,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_sales_mgmt IS
         END IF;
     END sp_add_prod;
 
-    -- Funksiya: M¸˛teri xerclemesine gˆre seqment teyini
+    -- Funksiya: M√º√æteri xerclemesine g√∂re seqment teyini
     FUNCTION fn_cust_seg(p_cid IN NUMBER) RETURN VARCHAR2 IS
         v_spend NUMBER;
         v_res   VARCHAR2(20);
